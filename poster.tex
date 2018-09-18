@@ -69,92 +69,90 @@
             health. Understanding ash settling is therefore crucial for assessing
             the associated risk. Downard-propagating fingers(Figure 1), hypothesised
             to form from a gravitational instability at the base of the ash cloud
-            (Figure 2) have been seen at many volcanoes. Here we present a linear
-            stability analysis, that predicits the initial growth rate of the
-            fingers. 
+            (Figure 2) have been seen at many volcanoes, and in analogue experiments
+            (\textbf{Allan Fries}) and numerical models (\textbf{Jonathon Lemus}).
+            Here we present a linear stability analysis, that predicits the initial
+            growth rate of the fingers. 
           \end{block}
 
         \end{column}
       \end{columns}
 
-      \begin{block}{Equations of motion}
+      \begin{columns}[t]
+        \begin{column}{0.43\paperwidth}
 
-        \begin{columns}[t]
+          \begin{block}{Equations of motion}
 
-          \begin{column}{0.3\paperwidth}
-            $$ \mathbf{\nabla} \cdot \mathbf{u}(\mathbf{x}, t) $$
+            \begin{columns}[t]
 
-            $$ \frac{\partial \mathbf{u}(\mathbf{x}, t)}{\partial t} +
-            [\mathbf{u}(\mathbf{x}, t)] \cdot \mathbf{\nabla}]
-              \mathbf{u}(\mathbf{x}, t) =
-              \frac{\mathbf{\nabla} P(\mathbf{x}, t)}{\rho_{0}} +
-              \nu \nabla^{2} \mathbf{u}(\mathbf{x}, t) - g'\mathbf{\hat{z}} $$
+              \begin{column}{0.13\paperwidth}
 
-              $$ \frac{\partial \phi(\mathbf{x}, t)}{\partial t} +
-              [\mathbf{u}(\mathbf{x}, t)] - \mathbf{U_{\text{p}}}] \cdot
-                \mathbf{\nabla} \phi(\mathbf{x}, t) =
-                D_{\text{p}} \nabla^{2} \phi(\mathbf{x}, t) $$
+                \centering
 
-                $$ \frac{\partial s(\mathbf{x}, t)}{\partial t} +
-                \mathbf{u}(\mathbf{x}, t)x \cdot \mathbf{\nabla} s(\mathbf{x}, t) =
-                D_{\text{s}} \nabla^{2} s(\mathbf{x}, t) $$
+                Conservation of mass \\
 
-                $$ g' = g \left( [1 + \alpha s(\mathbf{x}, t)] [1 - \phi(\mathbf{x}, t)]
-                + \frac{\rho_{p} \phi(\mathbf{x}, t)}{\rho_{0}} \right) $$
+                \vspace{1.75cm}
 
-          \end{column}
+                Conservation of momentum \\
 
-          \begin{column}{0.07\paperwidth}
+                \vspace{1.75cm}
 
-            \centering
+                Conservation of particles \\
 
-            \vspace{-0.5cm}
+                \vspace{1.75cm}
 
-            Conservation of \\ mass \\
+                Conservation of solute \\
 
-            \vspace{0.7cm}
+                \vspace{1.75cm}
 
-            Conservation of \\ momentum \\
+                Reduced gravity 
 
-            \vspace{0.7cm}
+              \end{column}
 
-            Conservation of \\ particles \\
+              \begin{column}{0.3\paperwidth}
+                $$ \mathbf{\nabla} \cdot \mathbf{u}(\mathbf{x}, t) $$
 
-            \vspace{0.7cm}
+                $$ \frac{\partial \mathbf{u}(\mathbf{x}, t)}{\partial t} +
+                [\mathbf{u}(\mathbf{x}, t)] \cdot \mathbf{\nabla}]
+                  \mathbf{u}(\mathbf{x}, t) =
+                  \frac{\mathbf{\nabla} P(\mathbf{x}, t)}{\rho_{0}} +
+                  \nu \nabla^{2} \mathbf{u}(\mathbf{x}, t) - g'\mathbf{\hat{z}} $$
 
-            Conservation of \\ solute \\
+                  $$ \frac{\partial \phi(\mathbf{x}, t)}{\partial t} +
+                  [\mathbf{u}(\mathbf{x}, t)] - \mathbf{U_{\text{p}}}] \cdot
+                    \mathbf{\nabla} \phi(\mathbf{x}, t) =
+                    D_{\text{p}} \nabla^{2} \phi(\mathbf{x}, t) $$
+                    
+                    $$ \frac{\partial s(\mathbf{x}, t)}{\partial t} +
+                    \mathbf{u}(\mathbf{x}, t)x \cdot \mathbf{\nabla} s(\mathbf{x}, t) =
+                    D_{\text{s}} \nabla^{2} s(\mathbf{x}, t) $$
 
-            \vspace{0.7cm}
+                    $$ g' = g \left( [1 + \alpha s(\mathbf{x}, t)] [1 - \phi(\mathbf{x}, t)]
+                    + \frac{\rho_{p} \phi(\mathbf{x}, t)}{\rho_{0}} \right) $$
 
-            Reduced gravity \\
+              \end{column}
 
-          \end{column}
+            \end{columns}
+          \end{block}
+        \end{column}
+        \begin{column}{0.17\paperwidth}
+          \begin{block}{Expansion}
+            $$ \mathbf{u}(\mathbf{x}, t) = \mathbf{\hat{u}}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
 
-          \begin{column}{0.23\paperwidth}
+            $$ P(\mathbf{x}, t) = P^{(0)}(\mathbf{x}, t) +
+            \hat{P}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
 
-            \vspace{2cm}
-
-            \begin{tabular}{| c | l | c | l |}
-              \hline
-              \multicolumn{2}{ | c |}{\textbf{Unknowns}}             & \multicolumn{2}{| c |}{\textbf{Parameters}}\\
-              \hline
-              $\mathbf{u}(\mathbf{x}, t)$ & Fluid velocity           & $\rho_{0} $           & Reference fluid density \\
-              $P(\mathbf{x}, t)$          & Pressure                 & $\nu$                & Kinematic viscosity \\
-              $\phi(\mathbf{x}, t)$       & Particle volume          &$\mathbf{U_{\text{p}}}$ & Particle settling velocity \\
-              $s(\mathbf{x}, t)$          & Solute concentration     & $\rho_{\text{p}}$      & Particle density \\
-              \cline{1-2}
-              \multicolumn{2}{ | c |}{\textbf{Variables}}            & $D_{\text{p}}$         & Particle diffusivity \\
-              \cline{1-2}
-              $\mathbf{x}$                & Position vector          & $D_{\text{s}}$         & Solute diffusivity \\
-              $t$                         & time                     & $g$                  & Gravity \\
-              $\mathbf{\hat{z}}$          & Vertical unit vector     & $\alpha$             & Expansivity \\
-              \hline  
-            \end{tabular}      
+            $$ \phi(\mathbf{x}, t) = \phi^{(0)}(\mathbf{x}, t) +
+            \hat{\phi}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
       
-          \end{column}
+            $$ s(\mathbf{x}, t) = s^{(0)}(\mathbf{x}, t) +
+            \hat{s}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
 
-        \end{columns}
-      \end{block}
+            $$\hat{P} \ll P^{(0)}, \hat{\phi} \ll \phi^{(0)}, \hat{s} \ll s^{(0)}$$
+          \end{block}
+
+        \end{column}
+      \end{columns}
       
     \end{column}
 
@@ -189,53 +187,30 @@
 
       \vspace{1cm}
 
+      \normalsize
+
+      \begin{tabular}{| c | l | c | l |}
+        \hline
+        \multicolumn{2}{ | c |}{\textbf{Unknowns}}             & \multicolumn{2}{| c |}{\textbf{Parameters}}\\
+        \hline
+        $\mathbf{u}(\mathbf{x}, t)$ & Fluid velocity           & $\rho_{0} $           & Reference fluid density \\
+        $P(\mathbf{x}, t)$          & Pressure                 & $\nu$                & Kinematic viscosity \\
+        $\phi(\mathbf{x}, t)$       & Particle volume          &$\mathbf{U_{\text{p}}}$ & Particle settling velocity \\
+        $s(\mathbf{x}, t)$          & Solute concentration     & $\rho_{\text{p}}$      & Particle density \\
+        \cline{1-2}
+        \multicolumn{2}{ | c |}{\textbf{Variables}}            & $D_{\text{p}}$         & Particle diffusivity \\
+        \cline{1-2}
+        $\mathbf{x}$                & Position vector          & $D_{\text{s}}$         & Solute diffusivity \\
+        $t$                         & time                     & $g$                  & Gravity \\
+        $\mathbf{\hat{z}}$          & Vertical unit vector     & $\alpha$             & Expansivity \\
+        \hline  
+      \end{tabular}      
       
     \end{column}
     
   \end{columns}
-
-
-  \begin{columns}[t]
-    \begin{column}{0.3\paperwidth}
-      \begin{block}{Expansion: Base state + Perturbation}
-        $$ \mathbf{u}(\mathbf{x}, t) = \mathbf{u}^{(0)}(\mathbf{x}, t) +
-        \mathbf{\hat{u}}(z) e^{i(k_{x} x + k_{y} y - \omega t)},
-        \quad \mathbf{\hat{u}} \ll \mathbf{u}^{(0)} $$
-
-        $$ P(\mathbf{x}, t) = P^{(0)}(\mathbf{x}, t) +
-        \hat{P}(z) e^{i(k_{x} x + k_{y} y - \omega t)},
-        \quad \hat{P} \ll P^{(0)} $$
-
-        $$ \phi(\mathbf{x}, t) = \phi^{(0)}(\mathbf{x}, t) +
-        \hat{\phi}(z) e^{i(k_{x} x + k_{y} y - \omega t)},
-        \quad \hat{\phi} \ll \phi^{(0)}  $$
-      
-        $$ s(\mathbf{x}, t) = s^{(0)}(\mathbf{x}, t) +
-        \hat{s}(z) e^{i(k_{x} x + k_{y} y - \omega t)},
-        \quad \hat{s} \ll s^{(0)}  $$
-      \end{block}
-
-    \end{column}
-
-    \begin{column}{0.6\paperwidth}
-
-%      $$ \frac{1}{\Rey} \frac{\mathrm{d}^{4} \hat{u_{z}}}{\mathrm{d} z'} - u_{z}^{0} \frac{\mathrm{d}^{3} \hat{u_{z}}}{\mathrm{d} z'^{3}} - \left(\frac{2 k^{2}}{\Rey} + \frac{\partial u_{z}^{0}}{\partial z'} + i k_{x} u_{x}^{0} \right) \frac{\mathrm{d}^{2} \hat{u_{z}}}{\mathrm{d} z'^{2}} + \left(k^{2} u_{z}^{0} - i k_{x} \frac{\partial u_{x}^{0}}{\partial z'} \right) \frac{\mathrm{d} \hat{u_{z}}}{\mathrm{d} z'} + \left[k^{2} \left(\frac{k^{2}}{\Rey} + i k_{x} u_{x}^{0}\right) + i k_{x} \frac{\partial^{2} u_{x}^{0}}{\partial z'^{2}}\right] \hat{u_{z}} + k^{2} A_{\beta} (1 - \phi^{0}) \hat{s} + k^{2} (A_{\gamma} - A_{\beta} s^{0}) \hat{\phi} = -i \omega \left(\frac{\mathrm{d}^{2} \hat{u_{z}}}{\mathrm{d} z'^{2}} - k^{2} \hat{u_{z}}\right)$$
-
-    \end{column}
-
-  \end{columns}
-
-
-      
-%    \begin{column}{0.3\paperwidth}
-%      \begin{block}{Perturbations}
-%
-%      \end{block}
-%
-%
-%    \end{column}
-    
-
       
 \end{frame}
 \end{document}
+
+%      $$ \frac{1}{\Rey} \frac{\mathrm{d}^{4} \hat{u_{z}}}{\mathrm{d} z'} - u_{z}^{0} \frac{\mathrm{d}^{3} \hat{u_{z}}}{\mathrm{d} z'^{3}} - \left(\frac{2 k^{2}}{\Rey} + \frac{\partial u_{z}^{0}}{\partial z'} + i k_{x} u_{x}^{0} \right) \frac{\mathrm{d}^{2} \hat{u_{z}}}{\mathrm{d} z'^{2}} + \left(k^{2} u_{z}^{0} - i k_{x} \frac{\partial u_{x}^{0}}{\partial z'} \right) \frac{\mathrm{d} \hat{u_{z}}}{\mathrm{d} z'} + \left[k^{2} \left(\frac{k^{2}}{\Rey} + i k_{x} u_{x}^{0}\right) + i k_{x} \frac{\partial^{2} u_{x}^{0}}{\partial z'^{2}}\right] \hat{u_{z}} + k^{2} A_{\beta} (1 - \phi^{0}) \hat{s} + k^{2} (A_{\gamma} - A_{\beta} s^{0}) \hat{\phi} = -i \omega \left(\frac{\mathrm{d}^{2} \hat{u_{z}}}{\mathrm{d} z'^{2}} - k^{2} \hat{u_{z}}\right)$$
