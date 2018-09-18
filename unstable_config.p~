@@ -1,0 +1,57 @@
+#Gnuplot script to plot the initial configuration for the static experiments
+
+set terminal epslatex
+
+set output "unstable_config.tex"
+
+set xlabel '$\rho$'
+set ylabel "z"
+
+unset xtics
+unset ytics
+
+set yrange[-5:5]
+set xrange[0:5]
+
+set samples 1000
+
+unset border
+
+set xzeroaxis
+set yzeroaxis
+
+set parametric
+set trange[-5:5]
+
+set key spacing 1.5
+   
+fx(t) = 1
+fy(t) = t
+   
+gx(t) = t > -1 ? 1.75:0
+gy(t) = t
+   
+hx(t) = t < 0 ? 2:0
+hy(t) = t
+
+ix(t) = t < -1 ? 2.1: t < 0 ? 2.75:1.85
+iy(t) = t
+
+set label '$\rho_{\text{w}}$' at 0.9,5.5
+
+set label '$\rho_{\text{w}} \beta \phi$' at 1.1,2.5
+set arrow from 1,2 to 1.75,2
+set arrow from 1.75,2 to 1,2
+
+set label '$\rho_{\text{w}} \alpha s$' at 1.25,-1.6
+set arrow from 1,-2 to 2,-2
+set arrow from 2,-2 to 1,-2
+
+set label '$U_{\text{p}} \Delta t$' at 3,-0.5
+set arrow from 2.9,0 to 2.9,-1
+set arrow from 2.9,-1 to 2.9,0
+   
+plot fx(t), fy(t) lw 4 title '$\rho_{\text{w}}$',\
+     gx(t), gy(t) lw 4 title '$\rho_{\text{w}} (1 + \beta \phi)$',\
+     hx(t), hy(t) lw 4 lc 7 title '$\rho_{\text{w}} (1 + \alpha s)$',\
+     ix(t), iy(t) lw 4 title '$\rho$
