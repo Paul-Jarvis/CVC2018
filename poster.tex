@@ -37,8 +37,9 @@
   \inst{3} School of Earth Sciences, University of Bristol}
 
 %
-%==some usefull fluit dynamics====================================================
+%==some usefull fluid dynamics====================================================
 \newcommand\Rey{\mbox{\textit{Re}}}  % Reynolds number
+\newcommand\Sc{\mbox{\textit{Sc}}}  % Schmidt number
 %==============================================================================
 %==the poster content==========================================================
 %==============================================================================
@@ -140,13 +141,13 @@
             $$ \mathbf{u}(\mathbf{x}, t) = \mathbf{\hat{u}}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
 
             $$ P(\mathbf{x}, t) = P^{(0)}(\mathbf{x}, t) +
-            \hat{P}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
+            \hat{P}(z) e^{i(k x - \omega t)}$$
 
             $$ \phi(\mathbf{x}, t) = \phi^{(0)}(\mathbf{x}, t) +
-            \hat{\phi}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
+            \hat{\phi}(z) e^{i(k x - \omega t)}$$
       
             $$ s(\mathbf{x}, t) = s^{(0)}(\mathbf{x}, t) +
-            \hat{s}(z) e^{i(k_{x} x + k_{y} y - \omega t)}$$
+            \hat{s}(z) e^{i(k x - \omega t)}$$
 
             $$\hat{P} \ll P^{(0)}, \hat{\phi} \ll \phi^{(0)}, \hat{s} \ll s^{(0)}$$
           \end{block}
@@ -209,7 +210,119 @@
     \end{column}
     
   \end{columns}
-      
+
+  \begin{columns}[t]
+    \begin{column}{0.3\paperwidth}
+      \begin{block}{Base states}
+          \begin{figure}
+            \includegraphics[width=0.3\paperwidth]{base_state.pdf}
+          \end{figure}
+
+          \vspace{-1cm}
+
+          \centering \footnotesize Figure 3. Choice of base states for the
+          particle and solute concentrations. The transitions have length scales
+          $L_{\text{p}}$ and $L_{\text{s}}$ respectively.
+          
+      \end{block}
+
+    \end{column}
+
+    \begin{column}{0.26\paperwidth}
+      \begin{block}{Dimensionless parameters}
+
+        \centering We nondimensionalise the system using the characteristic length and velocity scales
+
+        \vspace{-2cm}
+        
+        \begin{columns}[t]
+          \begin{column}{0.13\paperwidth}
+            \centering
+
+            $$ U_{\text{c}} = U_{\text{p}} $$
+
+          \end{column}
+          
+          \begin{column}{0.13\paperwidth}
+            \centering
+
+            $$ L_{\text{c}} = \left(\frac{\nu U_{\text{p}}}{g}\right)^{1/2} $$
+
+          \end{column}
+
+        \end{columns}
+
+        \vspace{2cm}
+        
+        \centering This gives six dimensionless parameters
+        
+            $$ \Rey = \frac{U_{\text{p}}^{3}}{g \nu}, \quad  \quad L_{\text{p}}' = L_{\text{p}} \left(\frac{g U_{\text{p}}}{\nu}\right)^{1/2} $$
+
+            $$\beta = \alpha s_{0}, \quad  \quad \gamma = \frac{\rho_{\text{p}}}{\rho_{0}}$$
+
+            $$\Sc_{\text{s}} = \frac{\nu}{D_{\text{s}}},  \quad  \quad \Sc_{\text{p}} = \frac{\nu}{D_{\text{p}}} $$
+      \end{block}
+
+
+    \end{column}
+
+    \begin{column}{0.34\paperwidth}
+      \begin{block}{Dimensionless equations}
+        Can express problemas a generalised eigenvalue equation
+        
+        $$\mathbf{M} \mathbf{e} = \omega \mathbf{Q} \mathbf{e}, $$
+
+        where
+
+        $$ \mathbf{M} = \begin{pmatrix}
+          \frac{\mathrm{d}^{4}}{\mathrm{d} z'^{4}} - 2 k^{2} \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} + k^{4} &  k^{2} \beta & k^{2} \gamma \\[0.3em]
+          \frac{\partial s^{(0)}}{\partial z'} & \frac{1}{\Rey \Sc_{\text{s}}} \left(k^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) & 0 \\[0.3em]
+          \frac{\partial \phi^{(0)}}{\partial z'} & 0 & \frac{1}{\Rey \Sc_{\text{p}}} \left(k^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) - U_{\text{p}}' \frac{\mathrm{d}}{\mathrm{d} z'} 
+        \end{pmatrix},$$
+
+        and
+
+        \begin{columns}[t]
+          \begin{column}{0.17\paperwidth}
+            $$\mathbf{e} = \begin{pmatrix}
+              \hat{u_{z}} \\[0.3em]
+              \hat{s} \\[0.3em]
+              \hat{\phi}
+            \end{pmatrix}, $$
+          \end{column}
+
+          \begin{column}{0.17\paperwidth}
+            $$ \mathbf{Q} = i \omega \begin{pmatrix}
+              \left(\frac{\mathrm{d}^{2}}{k^{2} - \mathrm{d} z'^{2}}\right) &  0 & 0 \\[0.3em]
+              0 & 1 & 0 \\[0.3em]
+              0 & 0 & 1
+              \end{pmatrix}.$$
+          \end{column}
+
+        \end{columns}
+      \end{block}
+
+    \end{column}
+    
+  \end{columns}
+
+  \begin{block}{Special case: Rayleigh-Taylor instability}
+    \begin{columns}[t]
+      \begin{column}{0.3\paperwidth}
+
+      \end{column}
+
+      \begin{column}{0.3\paperwidth}
+          \begin{figure}
+            \includegraphics[width=0.3\paperwidth]{RT_dispersion.pdf}
+          \end{figure}
+      \end{column}
+
+      \begin{column}{0.3\paperwidth}
+
+      \end{column}
+    \end{columns}
+  \end{block}
 \end{frame}
 \end{document}
 
