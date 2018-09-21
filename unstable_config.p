@@ -59,7 +59,7 @@ set label '\Large $U_{\text{p}} \Delta t$' at 3.3,-0.5
 set arrow from 3.2,0 to 3.2,-1
 set arrow from 3.2,-1 to 3.2,0
    
-plot fx(t), fy(t) lw 4 title '\Large $\rho_{0}$',\
-     gx(t), gy(t) lw 4 title '\Large $\rho_{0} + \rho_{\text{p}} \phi$',\
-     hx(t), hy(t) lw 4 lc 7 title '\Large $\rho_{0} (1 + \alpha s)$',\
-     ix(t), iy(t) lw 4 title '\Large $\rho$
+plot fx(t), fy(t) lw 5 title '\Large $\rho_{0}$',\
+     gx(t), gy(t) lw 5 title '\Large $\rho_{0} + \rho_{\text{p}} \phi$',\
+     hx(t), hy(t) lw 5 lc 7 title '\Large $\rho_{0} (1 + \alpha s)$',\
+     ix(t), iy(t) lw 5 title '\Large $\rho$

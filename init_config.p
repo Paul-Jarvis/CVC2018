@@ -55,8 +55,8 @@ set label '\Large $\rho_{0} \alpha s$' at 1.2,-1.6
 set arrow from 1,-2 to 2,-2
 set arrow from 2,-2 to 1,-2
 
-plot fx(t), fy(t) lw 4 title '$\rho_{0}$',\
-     gx(t), gy(t) lw 4 title '$\rho_{0} (1 + \beta \phi$)',\
-     hx(t), hy(t) lw 4 lc 7 title '$\rho_{0} (1 + \alpha s$)',\
-     ix(t), iy(t) lw 4 title '$\rho$
+plot fx(t), fy(t) lw 5 title '$\rho_{0}$',\
+     gx(t), gy(t) lw 5 title '$\rho_{0} (1 + \beta \phi$)',\
+     hx(t), hy(t) lw 5 lc 7 title '$\rho_{0} (1 + \alpha s$)',\
+     ix(t), iy(t) lw 5 title '$\rho$
      

@@ -70,4 +70,4 @@ set lmargin 5
 set rmargin 5
 unset key
 
-plot [0.001:0.999] phi(x) lc 6 lw 2 title '$\phi(z)$', [0.001:0.999] s(x) lc 7 lw 2  title '$s(z)$'
+plot [0.001:0.999] phi(x) lc 6 lw 5 title '$\phi(z)$', [0.001:0.999] s(x) lc 7 lw 5  title '$s(z)$'

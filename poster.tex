@@ -54,6 +54,9 @@
       \begin{columns}[t]
 
         \begin{column}{0.3\paperwidth}
+
+          \vspace{-2cm}
+
           \begin{figure}
             \includegraphics[width=\textwidth]{Sabancaya_fingers.png}
           \end{figure}
@@ -65,7 +68,11 @@
         \end{column}
 
         \begin{column}{0.3\paperwidth}
+
+          \vspace{-2cm}
+
           \begin{block}{Introduction}
+
             \centering Volcanic ash presents a hazard for infrastructure and human
             health. Understanding ash settling is therefore crucial for assessing
             the associated risk. Downard-propagating fingers(Figure 1), hypothesised
@@ -128,7 +135,7 @@
                     \mathbf{u}(\mathbf{x}, t)x \cdot \mathbf{\nabla} s(\mathbf{x}, t) =
                     D_{\text{s}} \nabla^{2} s(\mathbf{x}, t) $$
 
-                    $$ g' = g \left( [1 + \alpha s(\mathbf{x}, t)] [1 - \phi(\mathbf{x}, t)]
+                    $$ g' = g \left(1 + \alpha s(\mathbf{x}, t) 
                     + \frac{\rho_{p} \phi(\mathbf{x}, t)}{\rho_{0}} \right) $$
 
               \end{column}
@@ -214,7 +221,10 @@
   \begin{columns}[t]
     \begin{column}{0.3\paperwidth}
       \begin{block}{Base states}
-          \begin{figure}
+
+        \vspace{-1cm}
+
+        \begin{figure}
             \includegraphics[width=0.3\paperwidth]{base_state.pdf}
           \end{figure}
 
@@ -228,102 +238,166 @@
 
     \end{column}
 
-    \begin{column}{0.26\paperwidth}
-      \begin{block}{Dimensionless parameters}
-
-        \centering We nondimensionalise the system using the characteristic length and velocity scales
-
-        \vspace{-2cm}
-        
+    \begin{column}{0.6\paperwidth}
+      \begin{block}{Non-dimensionalisation and generalised eigenvalue problem}
         \begin{columns}[t]
-          \begin{column}{0.13\paperwidth}
-            \centering
+          \begin{column}{0.2\paperwidth}
+            \centering We nondimensionalise the system using the characteristic length and velocity scales
 
-            $$ U_{\text{c}} = U_{\text{p}} $$
-
-          \end{column}
+            \vspace{-1cm}
+            
+            \begin{columns}[t]
+              \begin{column}{0.11\paperwidth}
+                \centering
+                
+                $$ L_{\text{c}} = L_{\text{p}} $$
+                
+              \end{column}
           
-          \begin{column}{0.13\paperwidth}
-            \centering
+              \begin{column}{0.1\paperwidth}
+                \centering
 
-            $$ L_{\text{c}} = \left(\frac{\nu U_{\text{p}}}{g}\right)^{1/2} $$
+                $$ U_{\text{c}} = \frac{g L_{\text{p}}^{2}}{\nu} $$
+
+              \end{column}
+
+            \end{columns}
 
           \end{column}
 
+          \begin{column}{0.3\paperwidth}
+            \centering This gives seven dimensionless parameters
+
+            \vspace{-1cm}
+        
+            $$ \Rey = \frac{g L_{\text{p}}^{3}}{\nu^{2}}, \quad  \quad U_{\text{p}}' = \frac{\nu U_{\text{p}}}{g L_{\text{p}}^{2}} \quad \quad L_{\text{s}}' = \frac{L_{\text{s}}}{L_{\text{p}}}$$
+
+            \vspace{-1cm}
+        
+            $$A_{\beta} = \frac{\alpha s_{0} \nu^{2}}{g L_{\text{p}}^{3}}, \quad  \quad A_{\gamma} = \frac{\rho_{\text{p}} \nu^{2}}{g L_{\text{p}}^{3} \rho_{0}} \quad \quad \Sc_{\text{s}} = \frac{\nu}{D_{\text{s}}},  \quad  \quad \Sc_{\text{p}} = \frac{\nu}{D_{\text{p}}} $$
+
+          \end{column}
         \end{columns}
 
-        \vspace{2cm}
+        \vspace{1cm}
+
+        Can express problem as a generalised eigenvalue equation
         
-        \centering This gives six dimensionless parameters
-        
-            $$ \Rey = \frac{U_{\text{p}}^{3}}{g \nu}, \quad  \quad L_{\text{p}}' = L_{\text{p}} \left(\frac{g U_{\text{p}}}{\nu}\right)^{1/2} $$
-
-            $$\beta = \alpha s_{0}, \quad  \quad \gamma = \frac{\rho_{\text{p}}}{\rho_{0}}$$
-
-            $$\Sc_{\text{s}} = \frac{\nu}{D_{\text{s}}},  \quad  \quad \Sc_{\text{p}} = \frac{\nu}{D_{\text{p}}} $$
-      \end{block}
-
-
-    \end{column}
-
-    \begin{column}{0.34\paperwidth}
-      \begin{block}{Dimensionless equations}
-        Can express problemas a generalised eigenvalue equation
-        
-        $$\mathbf{M} \mathbf{e} = \omega \mathbf{Q} \mathbf{e}, $$
-
-        where
-
-        $$ \mathbf{M} = \begin{pmatrix}
-          \frac{\mathrm{d}^{4}}{\mathrm{d} z'^{4}} - 2 k^{2} \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} + k^{4} &  k^{2} \beta & k^{2} \gamma \\[0.3em]
-          \frac{\partial s^{(0)}}{\partial z'} & \frac{1}{\Rey \Sc_{\text{s}}} \left(k^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) & 0 \\[0.3em]
-          \frac{\partial \phi^{(0)}}{\partial z'} & 0 & \frac{1}{\Rey \Sc_{\text{p}}} \left(k^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) - U_{\text{p}}' \frac{\mathrm{d}}{\mathrm{d} z'} 
-        \end{pmatrix},$$
-
-        and
-
-        \begin{columns}[t]
-          \begin{column}{0.17\paperwidth}
-            $$\mathbf{e} = \begin{pmatrix}
+        $$ \begin{pmatrix}
+          \frac{1}{\Rey}\left(\frac{\mathrm{d}^{4}}{\mathrm{d} z'^{4}} - 2 k'^{2} \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} + k'^{4}\right) &  k'^{2} A_{\beta} & k'^{2} A_{\gamma} \\[0.3em]
+          \frac{\partial s^{(0)}}{\partial z'} & \frac{1}{\Rey \Sc_{\text{s}}} \left(k'^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) & 0 \\[0.3em]
+          \frac{\partial \phi^{(0)}}{\partial z'} & 0 & \frac{1}{\Rey \Sc_{\text{p}}} \left(k'^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) - U_{\text{p}}' \frac{\mathrm{d}}{\mathrm{d} z'} 
+        \end{pmatrix} \begin{pmatrix}
               \hat{u_{z}} \\[0.3em]
               \hat{s} \\[0.3em]
               \hat{\phi}
-            \end{pmatrix}, $$
-          \end{column}
-
-          \begin{column}{0.17\paperwidth}
-            $$ \mathbf{Q} = i \omega \begin{pmatrix}
-              \left(\frac{\mathrm{d}^{2}}{k^{2} - \mathrm{d} z'^{2}}\right) &  0 & 0 \\[0.3em]
+        \end{pmatrix} = i \omega \begin{pmatrix}
+              \left(\frac{\mathrm{d}^{2}}{k'^{2} - \mathrm{d} z'^{2}}\right) &  \quad 0 \quad & \quad 0 \quad \\[0.3em]
               0 & 1 & 0 \\[0.3em]
               0 & 0 & 1
-              \end{pmatrix}.$$
-          \end{column}
+        \end{pmatrix} \begin{pmatrix}
+              \hat{u_{z}} \\[0.3em]
+              \hat{s} \\[0.3em]
+              \hat{\phi}
+        \end{pmatrix}$$
 
-        \end{columns}
+        \vspace{1cm}
+        
+        \centering This is a generalised eigenvalue problem and is solved for the eigenvalue $\omega = \Omega + i \sigma$. Solutions where $\sigma < 0$ are unstable, and the associated growth rate is $|\sigma|$. We can therefore predict the fastest growing perturbation wavelength $\lambda_{\text{max}} = 2 \pi / k_{\text{max}}$ which maximises $|\sigma|$ for different values of the dimensionless parameters. 
       \end{block}
 
     \end{column}
-    
+
   \end{columns}
 
   \begin{block}{Special case: Rayleigh-Taylor instability}
     \begin{columns}[t]
       \begin{column}{0.3\paperwidth}
+        \centering To validate the model, we consider the special case of a single phase ($s_{0} = 0$) in the absense of a settling velocity ($U_{\text{p}}' = 0$). This reduces the problem to that of the well studied Rayleigh-Taylor problem. 
 
+        \begin{figure}
+            \includegraphics[width=0.3\paperwidth]{Megan.jpg}
+        \end{figure}
+
+        \vspace{-0.5cm}
+
+        \centering \footnotesize Figure 4. Experimentally produced Rayleigh-Taylor instability. The green fluid is lighter than the overlying clear fluid. Credit: Megan Davies Wykes
+
+        \vspace{0.5cm}
+
+        \normalsize Choose sufficiently large $\Rey (10^{4})$ and $\Sc_{\text{p}} (10^{3})$ that system becomes independent of them \\
       \end{column}
 
       \begin{column}{0.3\paperwidth}
-          \begin{figure}
-            \includegraphics[width=0.3\paperwidth]{RT_dispersion.pdf}
-          \end{figure}
+
+        \vspace{-0.5cm}
+
+        \begin{figure}
+          \includegraphics[width=0.3\paperwidth]{RT_dispersion.pdf}
+        \end{figure}
+
+        \vspace{-0.8cm}
+
+        \centering \footnotesize Figure 5. Dispersion relation showing that $\sigma \sim A_{\gamma}$. There are two regimes of $k^{\prime}$ dependence, when $k^{\prime} < 1$, $\sigma \sim k^{\prime 1/2}$ and when $k^{\prime} > 1$, $\sigma \sim k^{\prime 0}$. 
       \end{column}
 
       \begin{column}{0.3\paperwidth}
 
+        \vspace{1cm}
+        
+        \begin{columns}[c]
+          
+          \begin{column}{0.15\paperwidth}
+
+            \centering $k^{\prime} < 1 \quad (\lambda > 2 \pi L_{\text{p}})$
+
+          \end{column}
+
+          \begin{column}{0.15\paperwidth}
+
+            \centering $k^{\prime} > 1 \quad (\lambda < 2 \pi L_{\text{p}})$
+
+          \end{column}
+        \end{columns}
+
+        \vspace{1cm}
+
+        \begin{columns}[c]
+          
+          \begin{column}{0.15\paperwidth}
+
+            \centering Wavelength is larger than the transition region. Scaling behaviour the same as for an infinitesimally thin transition zone. \\
+
+          \end{column}
+
+          \begin{column}{0.15\paperwidth}
+
+            \centering Wavelength is shorter than the transition region. Growth rate independent of wavenumber. \\
+
+          \end{column}
+        \end{columns}
+
+        \vspace{1cm}
+
+        \begin{columns}[c]
+          
+          \begin{column}{0.15\paperwidth}
+
+            \centering $$\omega \sim \left(\frac{g k \rho_{\text{p}}}{\rho_{0}}\right)^{1/2}$$
+        
+          \end{column}
+
+          \begin{column}{0.15\paperwidth}
+
+            \centering $$\omega \sim \left(\frac{g \rho_{\text{p}}}{L_{\text{p}} \rho_{0}}\right)^{1/2}$$
+
+          \end{column}
+        \end{columns}
       \end{column}
+
     \end{columns}
+        
   \end{block}
 \end{frame}
 \end{document}
 
-%      $$ \frac{1}{\Rey} \frac{\mathrm{d}^{4} \hat{u_{z}}}{\mathrm{d} z'} - u_{z}^{0} \frac{\mathrm{d}^{3} \hat{u_{z}}}{\mathrm{d} z'^{3}} - \left(\frac{2 k^{2}}{\Rey} + \frac{\partial u_{z}^{0}}{\partial z'} + i k_{x} u_{x}^{0} \right) \frac{\mathrm{d}^{2} \hat{u_{z}}}{\mathrm{d} z'^{2}} + \left(k^{2} u_{z}^{0} - i k_{x} \frac{\partial u_{x}^{0}}{\partial z'} \right) \frac{\mathrm{d} \hat{u_{z}}}{\mathrm{d} z'} + \left[k^{2} \left(\frac{k^{2}}{\Rey} + i k_{x} u_{x}^{0}\right) + i k_{x} \frac{\partial^{2} u_{x}^{0}}{\partial z'^{2}}\right] \hat{u_{z}} + k^{2} A_{\beta} (1 - \phi^{0}) \hat{s} + k^{2} (A_{\gamma} - A_{\beta} s^{0}) \hat{\phi} = -i \omega \left(\frac{\mathrm{d}^{2} \hat{u_{z}}}{\mathrm{d} z'^{2}} - k^{2} \hat{u_{z}}\right)$$
