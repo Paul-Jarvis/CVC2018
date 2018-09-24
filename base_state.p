@@ -62,9 +62,9 @@ set label '\Large \color{red} $2 L_{\text{s}}$' at 1.01, 2
 set label '\Large \color{red} $4 L_{\text{s}}$' at 1.01, 4
 set label '\Large \color{red} $6 L_{\text{s}}$' at 1.01, 6
 
-set label '\Large \color{blue} $\frac{\phi}{\phi_{0}} = \begin{cases} \frac{1}{2} \exp\left(\frac{z}{L_{\text{p}}}\right), & x \leq 0 \\ 1 - \frac{1}{2} \exp\left(\frac{-z}{L_{\text{p}}}\right), & x > 0 \end{cases}$' at 0.15,4
+set label '\Large \color{blue} $\frac{\phi}{\phi_{0}} = \begin{cases} \frac{1}{2} \exp\left(\frac{z}{L_{\text{p}}}\right), & z \leq 0 \\ 1 - \frac{1}{2} \exp\left(\frac{-z}{L_{\text{p}}}\right), & z > 0 \end{cases}$' at 0.15,4
 
-set label '\Large \color{red} $\frac{s}{s_{0}} = \begin{cases} 1 - \frac{1}{2} \exp\left(\frac{z}{L_{\text{s}}}\right), & x \leq 0 \\ \frac{1}{2} \exp\left(\frac{-z}{L_{\text{s}}}\right), & x > 0 \end{cases}$' at 0.15,-4
+set label '\Large \color{red} $\frac{s}{s_{0}} = \begin{cases} 1 - \frac{1}{2} \exp\left(\frac{z}{L_{\text{s}}}\right), & z \leq 0 \\ \frac{1}{2} \exp\left(\frac{-z}{L_{\text{s}}}\right), & z > 0 \end{cases}$' at 0.15,-4
 
 set lmargin 5
 set rmargin 5

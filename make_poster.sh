@@ -11,12 +11,12 @@
 # pdflatex unstable_config.tex
 
 # Produce plot of base states
-# gnuplot base_state.p
-# pdflatex base_state.tex
+gnuplot base_state.p
+pdflatex base_state.tex
 
 # Produce plot of Rayleigh-Taylor dispersion
-gnuplot RT_dispersion.p
-pdflatex RT_dispersion.tex
+# gnuplot RT_dispersion.p
+# pdflatex RT_dispersion.tex
 
 #Produce poster
 pdflatex poster.tex

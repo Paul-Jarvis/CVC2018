@@ -84,10 +84,10 @@
  %\setbeamerfont{bibliography item}{size=\tiny}
  %\setbeamerfont{bibliography entry author}{size=\tiny}
 %extra settings for landscape
-\setlength{\logocolw}{.14142\paperwidth}
+\setlength{\logocolw}{0.25\paperwidth}
 \makeatletter
 % \ifportrait
-  \setlength{\logocolw}{.2\paperwidth}
+  \setlength{\logocolw}{0.225\paperwidth}
 % \fi
 \makeatother
 %==============================================================================
@@ -95,19 +95,25 @@
 %==============================================================================
 \setbeamertemplate{headline}{
  \leavevmode
+\vskip1cm
+\centering
+    \usebeamercolor{title in headline}{\color{fg}
+     \textbf{\fontsize{80}{96}\selectfont{\inserttitle}}\\[1ex]}
+    %\vskip1cm
+    \vspace{-1cm}
   \begin{columns}
 %jacobs logo column
    \begin{column}{\logocolw}
-    \begin{flushright}
-     \includegraphics[width=\linewidth]{UNIGE_logo.jpg}
-    \end{flushright}   
+    \begin{center}
+       \includegraphics[width=\linewidth]{UNIGE_logo.jpg}
+    \end{center}   
    \end{column}
 %title column
-   \begin{column}{0.6\linewidth}
+   \begin{column}{0.55\linewidth}
     \vskip2cm
     \centering
-    \usebeamercolor{title in headline}{\color{fg}
-     \textbf{\huge{\inserttitle}}\\[1ex]}
+%    \usebeamercolor{title in headline}{\color{fg}
+%     \textbf{\huge{\inserttitle}}\\[1ex]}
     \usebeamercolor{author in headline}{\color{fg}
      \large{\insertauthor}\\[1ex]}
     \usebeamercolor{institute in headline}{\color{fg}
@@ -116,8 +122,8 @@
       \end{column}
 %jacobs logo column
    \begin{column}{\logocolw}
-    \begin{center}
-%     \includegraphics[width=.4\linewidth]{img/AN_atlaslogo}
+     \begin{center}
+     \includegraphics[width=0.9\linewidth]{header_cropped.png}
     \end{center}
    \end{column}
 %       \begin{column}{.2\linewidth}

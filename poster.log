@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.8)  20 SEP 2018 18:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.8)  24 SEP 2018 09:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1621,7 +1621,7 @@ LaTeX Info: Redefining \selectfont on input line 46.
 File: UNIGE_logo.jpg Graphic file (type jpg)
 <use UNIGE_logo.jpg>
 Package pdftex.def Info: UNIGE_logo.jpg  used on input line 46.
-(pdftex.def)             Requested size: 478.56808pt x 173.06783pt.
+(pdftex.def)             Requested size: 538.41191pt x 194.74008pt.
 LaTeX Font Info:    Calculating math sizes for size <13.2> on input line 46.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 46.
 
@@ -1658,65 +1658,92 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <22.9949> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <16.425> on input line 46.
-<Sabancaya_fingers.png, id=14, 1644.1425pt x 636.12656pt>
+<header_cropped.png, id=14, 1846.9pt x 1071.00125pt>
+File: header_cropped.png Graphic file (type png)
+<use header_cropped.png>
+Package pdftex.def Info: header_cropped.png  used on input line 46.
+(pdftex.def)             Requested size: 484.56743pt x 280.98679pt.
+<Sabancaya_fingers.png, id=15, 1644.1425pt x 636.12656pt>
 File: Sabancaya_fingers.png Graphic file (type png)
 <use Sabancaya_fingers.png>
-Package pdftex.def Info: Sabancaya_fingers.png  used on input line 401.
+Package pdftex.def Info: Sabancaya_fingers.png  used on input line 508.
 (pdftex.def)             Requested size: 717.87038pt x 277.7417pt.
-LaTeX Font Info:    Calculating math sizes for size <27.37> on input line 401.
+LaTeX Font Info:    Calculating math sizes for size <27.37> on input line 508.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <27.37> on input line 401.
+(Font)              <27.37> on input line 508.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <19.1589> on input line 401.
+(Font)              <19.1589> on input line 508.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.685> on input line 401.
-<init_config.pdf, id=18, 142.23137pt x 256.05663pt>
+(Font)              <13.685> on input line 508.
+<Etna_eiya.png, id=19, 1168.365pt x 444.15938pt>
+File: Etna_eiya.png Graphic file (type png)
+<use Etna_eiya.png>
+Package pdftex.def Info: Etna_eiya.png  used on input line 508.
+(pdftex.def)             Requested size: 717.87038pt x 272.90901pt.
+<sketch.png, id=20, 855.195pt x 286.06876pt>
+File: sketch.png Graphic file (type png)
+<use sketch.png>
+Package pdftex.def Info: sketch.png  used on input line 508.
+(pdftex.def)             Requested size: 957.13617pt x 320.16783pt.
+<init_config.pdf, id=21, 142.23137pt x 256.05663pt>
 File: init_config.pdf Graphic file (type pdf)
 <use init_config.pdf>
-Package pdftex.def Info: init_config.pdf  used on input line 401.
+Package pdftex.def Info: init_config.pdf  used on input line 508.
 (pdftex.def)             Requested size: 316.16104pt x 569.05511pt.
 
-Overfull \hbox (29.0275pt too wide) in paragraph at lines 401--401
+Overfull \hbox (29.0275pt too wide) in paragraph at lines 508--508
  [] 
  []
 
-<unstable_config.pdf, id=19, 199.144pt x 256.05663pt>
+<unstable_config.pdf, id=22, 199.144pt x 256.05663pt>
 File: unstable_config.pdf Graphic file (type pdf)
 <use unstable_config.pdf>
-Package pdftex.def Info: unstable_config.pdf  used on input line 401.
+Package pdftex.def Info: unstable_config.pdf  used on input line 508.
 (pdftex.def)             Requested size: 398.40245pt x 512.1496pt.
-<base_state.pdf, id=20, 361.35pt x 252.945pt>
+<base_state.pdf, id=23, 361.35pt x 252.945pt>
 File: base_state.pdf Graphic file (type pdf)
 <use base_state.pdf>
-Package pdftex.def Info: base_state.pdf  used on input line 401.
+Package pdftex.def Info: base_state.pdf  used on input line 508.
 (pdftex.def)             Requested size: 717.87038pt x 502.55789pt.
-LaTeX Font Info:    Calculating math sizes for size <19.01> on input line 401.
+LaTeX Font Info:    Calculating math sizes for size <19.01> on input line 508.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <19.01> on input line 401.
+(Font)              <19.01> on input line 508.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <13.30693> on input line 401.
+(Font)              <13.30693> on input line 508.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.50499> on input line 401.
+(Font)              <9.50499> on input line 508.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <27.37> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 401.
-<Megan.jpg, id=21, 1031.052pt x 421.0932pt>
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 508.
+<Megan.jpg, id=24, 1031.052pt x 421.0932pt>
 File: Megan.jpg Graphic file (type jpg)
 <use Megan.jpg>
-Package pdftex.def Info: Megan.jpg  used on input line 401.
+Package pdftex.def Info: Megan.jpg  used on input line 508.
 (pdftex.def)             Requested size: 717.87038pt x 293.19543pt.
-<RT_dispersion.pdf, id=22, 361.35pt x 252.945pt>
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <13.2> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 508.
+<RT_dispersion.pdf, id=25, 361.35pt x 252.945pt>
 File: RT_dispersion.pdf Graphic file (type pdf)
 <use RT_dispersion.pdf>
-Package pdftex.def Info: RT_dispersion.pdf  used on input line 401.
+Package pdftex.def Info: RT_dispersion.pdf  used on input line 508.
 (pdftex.def)             Requested size: 717.87038pt x 502.55789pt.
+<exp.jpg, id=26, 1284.8pt x 722.7pt>
+File: exp.jpg Graphic file (type jpg)
+<use exp.jpg>
+Package pdftex.def Info: exp.jpg  used on input line 508.
+(pdftex.def)             Requested size: 717.87038pt x 403.81601pt.
 File: UNIGE_logo.jpg Graphic file (type jpg)
 <use UNIGE_logo.jpg>
-Package pdftex.def Info: UNIGE_logo.jpg  used on input line 401.
-(pdftex.def)             Requested size: 478.56808pt x 173.06783pt.
+Package pdftex.def Info: UNIGE_logo.jpg  used on input line 508.
+(pdftex.def)             Requested size: 538.41191pt x 194.74008pt.
+File: header_cropped.png Graphic file (type png)
+<use header_cropped.png>
+Package pdftex.def Info: header_cropped.png  used on input line 508.
+(pdftex.def)             Requested size: 484.56743pt x 280.98679pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
- <./UNIGE_logo.jpg> <./Sabancaya_fingers.png> <./init_config.pdf> <./unstable_c
-onfig.pdf> <./base_state.pdf> <./Megan.jpg> <./RT_dispersion.pdf>]
+ <./UNIGE_logo.jpg> <./header_cropped.png (PNG copy)> <./Sabancaya_fingers.png>
+ <./Etna_eiya.png> <./sketch.png> <./init_config.pdf> <./unstable_config.pdf> <
+./base_state.pdf> <./Megan.jpg> <./RT_dispersion.pdf> <./exp.jpg>]
 \tf@nav=\write6
 \openout6 = `poster.nav'.
 
@@ -1726,24 +1753,24 @@ onfig.pdf> <./base_state.pdf> <./Megan.jpg> <./RT_dispersion.pdf>]
 \tf@snm=\write8
 \openout8 = `poster.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 509.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 509.
  (./poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 509.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 509.
 Package rerunfilecheck Info: File `poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24592 strings out of 494923
- 477226 string characters out of 6180743
- 637050 words of memory out of 5000000
- 27300 multiletter control sequences out of 15000+600000
- 133391 words of font info for 106 fonts, out of 8000000 for 9000
+ 24675 strings out of 494923
+ 479390 string characters out of 6180743
+ 674199 words of memory out of 5000000
+ 27379 multiletter control sequences out of 15000+600000
+ 138973 words of font info for 108 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 53i,18n,92p,806b,1521s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share
+ 53i,18n,92p,806b,1451s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathsy.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex1
 0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
@@ -1761,12 +1788,13 @@ onts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr
-/share/texmf/fonts/type1/public/lm/lmsy10.pfb>
-Output written on poster.pdf (1 page, 2071874 bytes).
+ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmsy10.pfb>
+Output written on poster.pdf (1 page, 4968793 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
  3 named destinations out of 1000 (max. 500000)
- 84 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 

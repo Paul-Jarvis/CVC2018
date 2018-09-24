@@ -32,8 +32,8 @@
   Allan Fries \inst{1} \\ \and Amanda Clarke \inst{2} \and Jeremy Phillips \inst{3}
   \and Costanza Bonadonna \inst{1}}
 \institute[shortinst]{\inst{1} Section of Earth and Environmental Sciences,
-  University of Geneva \and
-  \inst{2} School of Earth and Space Exploration, Arizona State University \and
+  University of Geneva \\
+  \inst{2} School of Earth and Space Exploration, Arizona State University \\
   \inst{3} School of Earth Sciences, University of Bristol}
 
 %
@@ -48,43 +48,80 @@
 \begin{frame}[t]
 
   \begin{columns}[t]
+    \begin{column}{0.3\paperwidth}
+
+      \begin{figure}
+        \includegraphics[width=\textwidth]{Sabancaya_fingers.png}
+      \end{figure}
+
+      \centering \footnotesize Figure 1. a) Visible and b) infrared images of
+      ash clouds from Vulcanian explosions of Sabancaya volcano, Peru. Fingers
+      can be seen in both images.
+
+    \end{column}
+
+    \begin{column}{0.3\paperwidth}
+
+      \begin{block}{Introduction}
+
+        \centering Volcanic ash presents a hazard for infrastructure and human
+        health. Understanding ash settling is therefore crucial for assessing
+        the associated risk. Downard-propagating fingers(Figures 1 and 2), hypothesised
+        to form from a gravitational instability at the base of the ash cloud
+        have been seen at many volcanoes, and in analogue experiments\textsuperscript{1,2}
+        (\textbf{Allan Fries}) and numerical models\textsuperscript{3} (\textbf{Jonathon Lemus}).
+        Here we present a linear stability analysis, that predicits the initial
+        growth rate of the fingers. 
+      \end{block}
+
+    \end{column}
+
+    \begin{column}{0.3\paperwidth}
+
+      \begin{figure}
+        \includegraphics[width=\textwidth]{Etna_eiya.png}
+      \end{figure}
+
+
+      \centering \footnotesize Figure 2. Fingers seen in ash clouds at a) Etna
+      2013 and b) Eyjafjallaj{\"o}kull 2010. Adapted from Scolle et al. 2017.
+    \end{column}
+    
+  \end{columns}
+
+  \begin{columns}[t]
 
     \begin{column}{0.6\paperwidth}
 
-      \begin{columns}[t]
+      \begin{block}{Settling-drive gravitational instability}
+        \begin{columns}[t]
 
-        \begin{column}{0.3\paperwidth}
+          \begin{column}{0.2\paperwidth}
+            
+            \centering We model the ash cloud as a particle suspension overlying
+            a denser fluid (salt or sugar water in experiments; Figure 3). As
+            particles settle towards the interface, a narrow ash-rich,
+            gravitationally unstable layer forms called the particle boundary
+            layer (Figure 4). Small disturbances in this layer rapidly grow to
+            form fingers, which propagate downwards faster than the settling
+            velocity of individual particles, imapcting fine ash dispersal.
+            
+          \end{column}
 
-          \vspace{-2cm}
+          \begin{column}{0.4\paperwidth}
 
-          \begin{figure}
-            \includegraphics[width=\textwidth]{Sabancaya_fingers.png}
-          \end{figure}
+            \begin{figure}
+              \includegraphics[width=\textwidth]{sketch.png}
+            \end{figure}
 
-          \centering \footnotesize Figure 1. a) Visible and b) infrared images of
-          ash clouds from Vulcanian explosions of Sabancaya volcano, Peru. Fingers
-          can be seen in both images.
+            \centering \footnotesize Figure 3. Schematic showing the formation of fingers at
+            base of an ash cloud.
+            
+          \end{column}
+        \end{columns}
+      \end{block}
 
-        \end{column}
 
-        \begin{column}{0.3\paperwidth}
-
-          \vspace{-2cm}
-
-          \begin{block}{Introduction}
-
-            \centering Volcanic ash presents a hazard for infrastructure and human
-            health. Understanding ash settling is therefore crucial for assessing
-            the associated risk. Downard-propagating fingers(Figure 1), hypothesised
-            to form from a gravitational instability at the base of the ash cloud
-            (Figure 2) have been seen at many volcanoes, and in analogue experiments
-            (\textbf{Allan Fries}) and numerical models (\textbf{Jonathon Lemus}).
-            Here we present a linear stability analysis, that predicits the initial
-            growth rate of the fingers. 
-          \end{block}
-
-        \end{column}
-      \end{columns}
 
       \begin{columns}[t]
         \begin{column}{0.43\paperwidth}
@@ -166,8 +203,6 @@
 
     \begin{column}{0.3\paperwidth}
 
-      \vspace{-3cm}
-      
       \begin{columns}[t]
         \begin{column}{0.12\paperwidth}
 
@@ -189,7 +224,7 @@
 
       \vspace{-1cm}
 
-      \centering \footnotesize Figure 2. Despite an initial stable
+      \centering \footnotesize Figure 4. Despite an initial stable
       configuration, ash settling leads to the formation of a gravitationally
       unstable \textbf{particle boundary layer}.
 
@@ -230,7 +265,7 @@
 
           \vspace{-1cm}
 
-          \centering \footnotesize Figure 3. Choice of base states for the
+          \centering \footnotesize Figure 5. Choice of base states for the
           particle and solute concentrations. The transitions have length scales
           $L_{\text{p}}$ and $L_{\text{s}}$ respectively.
           
@@ -241,41 +276,68 @@
     \begin{column}{0.6\paperwidth}
       \begin{block}{Non-dimensionalisation and generalised eigenvalue problem}
         \begin{columns}[t]
-          \begin{column}{0.2\paperwidth}
-            \centering We nondimensionalise the system using the characteristic length and velocity scales
+          \begin{column}{0.21\paperwidth}
+            \centering We nondimensionalise the system using the characteristic length, velocity and concentration scales
 
-            \vspace{-1cm}
+            \vspace{-2cm}
             
             \begin{columns}[t]
-              \begin{column}{0.11\paperwidth}
+              \begin{column}{0.07\paperwidth}
                 \centering
                 
                 $$ L_{\text{c}} = L_{\text{p}} $$
                 
               \end{column}
           
-              \begin{column}{0.1\paperwidth}
+              \begin{column}{0.07\paperwidth}
                 \centering
 
                 $$ U_{\text{c}} = \frac{g L_{\text{p}}^{2}}{\nu} $$
 
               \end{column}
 
+              \begin{column}{0.07\paperwidth}
+                \centering
+
+                $$ s_{\text{c}} = s_{0} $$
+
+              \end{column}
+              
             \end{columns}
 
           \end{column}
 
-          \begin{column}{0.3\paperwidth}
-            \centering This gives seven dimensionless parameters
+          \begin{column}{0.29\paperwidth}
+            \centering This gives eight dimensionless parameters
 
             \vspace{-1cm}
-        
-            $$ \Rey = \frac{g L_{\text{p}}^{3}}{\nu^{2}}, \quad  \quad U_{\text{p}}' = \frac{\nu U_{\text{p}}}{g L_{\text{p}}^{2}} \quad \quad L_{\text{s}}' = \frac{L_{\text{s}}}{L_{\text{p}}}$$
 
-            \vspace{-1cm}
-        
-            $$A_{\beta} = \frac{\alpha s_{0} \nu^{2}}{g L_{\text{p}}^{3}}, \quad  \quad A_{\gamma} = \frac{\rho_{\text{p}} \nu^{2}}{g L_{\text{p}}^{3} \rho_{0}} \quad \quad \Sc_{\text{s}} = \frac{\nu}{D_{\text{s}}},  \quad  \quad \Sc_{\text{p}} = \frac{\nu}{D_{\text{p}}} $$
+            \begin{columns}[t]
+              \begin{column}{0.07\paperwidth}
+                $$ \Rey = \frac{g L_{\text{p}}^{3}}{\nu^{2}} $$
 
+                $$A_{\beta} = \frac{\alpha s_{0} \nu^{2}}{g L_{\text{p}}^{3}}$$
+              \end{column}
+
+              \begin{column}{0.07\paperwidth}
+                $$U_{\text{p}}' = \frac{\nu U_{\text{p}}}{g L_{\text{p}}^{2}}$$
+
+                $$A_{\gamma} = \frac{\rho_{\text{p}} \nu^{2}}{g L_{\text{p}}^{3} \rho_{0}}$$
+              \end{column}
+
+              \begin{column}{0.07\paperwidth}
+                $$L_{\text{s}}' = \frac{L_{\text{s}}}{L_{\text{p}}}$$
+
+                $$\Sc_{\text{s}} = \frac{\nu}{D_{\text{s}}}$$
+              \end{column}
+
+              \begin{column}{0.07\paperwidth}
+                $$\phi_{0}$$
+
+                $$\Sc_{\text{p}} = \frac{\nu}{D_{\text{p}}} $$
+              \end{column}
+            \end{columns}
+        
           \end{column}
         \end{columns}
 
@@ -285,25 +347,25 @@
         
         $$ \begin{pmatrix}
           \frac{1}{\Rey}\left(\frac{\mathrm{d}^{4}}{\mathrm{d} z'^{4}} - 2 k'^{2} \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} + k'^{4}\right) &  k'^{2} A_{\beta} & k'^{2} A_{\gamma} \\[0.3em]
-          \frac{\partial s^{(0)}}{\partial z'} & \frac{1}{\Rey \Sc_{\text{s}}} \left(k'^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) & 0 \\[0.3em]
-          \frac{\partial \phi^{(0)}}{\partial z'} & 0 & \frac{1}{\Rey \Sc_{\text{p}}} \left(k'^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) - U_{\text{p}}' \frac{\mathrm{d}}{\mathrm{d} z'} 
+          \frac{\partial s^{\prime (0)}}{\partial z'} & \frac{1}{\Rey \Sc_{\text{s}}} \left(k'^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) & 0 \\[0.3em]
+          \frac{\partial \phi^{\prime (0)}}{\partial z'} & 0 & \frac{1}{\Rey \Sc_{\text{p}}} \left(k'^{2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}} \right) - U_{\text{p}}' \frac{\mathrm{d}}{\mathrm{d} z'} 
         \end{pmatrix} \begin{pmatrix}
-              \hat{u_{z}} \\[0.3em]
-              \hat{s} \\[0.3em]
-              \hat{\phi}
-        \end{pmatrix} = i \omega \begin{pmatrix}
-              \left(\frac{\mathrm{d}^{2}}{k'^{2} - \mathrm{d} z'^{2}}\right) &  \quad 0 \quad & \quad 0 \quad \\[0.3em]
+              \hat{u_{z}}^{\prime} \\[0.3em]
+              \hat{s}^{\prime} \\[0.3em]
+              \hat{\phi}^{\prime}
+        \end{pmatrix} = i \omega^{\prime} \begin{pmatrix}
+              \left(k^{\prime 2} - \frac{\mathrm{d}^{2}}{\mathrm{d} z'^{2}}\right) &  \quad 0 \quad & \quad 0 \quad \\[0.3em]
               0 & 1 & 0 \\[0.3em]
               0 & 0 & 1
         \end{pmatrix} \begin{pmatrix}
-              \hat{u_{z}} \\[0.3em]
-              \hat{s} \\[0.3em]
-              \hat{\phi}
+              \hat{u_{z}}^{\prime} \\[0.3em]
+              \hat{s}^{\prime} \\[0.3em]
+              \hat{\phi}^{\prime}
         \end{pmatrix}$$
 
         \vspace{1cm}
         
-        \centering This is a generalised eigenvalue problem and is solved for the eigenvalue $\omega = \Omega + i \sigma$. Solutions where $\sigma < 0$ are unstable, and the associated growth rate is $|\sigma|$. We can therefore predict the fastest growing perturbation wavelength $\lambda_{\text{max}} = 2 \pi / k_{\text{max}}$ which maximises $|\sigma|$ for different values of the dimensionless parameters. 
+        \centering This is a generalised eigenvalue problem\textsuperscript{4X} and is solved for the eigenvalue $\omega^{\prime} = \Omega + i \sigma^{\prime}$. Solutions where $\sigma^{\prime} < 0$ are unstable, and the associated growth rate is $|\sigma^{\prime}|$. We can therefore predict the fastest growing perturbation wavelength $\lambda_{\text{max}} = 2 \pi / k_{\text{max}}$ which maximises $|\sigma^{\prime}|$ for different values of the dimensionless parameters. 
       \end{block}
 
     \end{column}
@@ -313,7 +375,7 @@
   \begin{block}{Special case: Rayleigh-Taylor instability}
     \begin{columns}[t]
       \begin{column}{0.3\paperwidth}
-        \centering To validate the model, we consider the special case of a single phase ($s_{0} = 0$) in the absense of a settling velocity ($U_{\text{p}}' = 0$). This reduces the problem to that of the well studied Rayleigh-Taylor problem. 
+        \centering To validate the model, we consider the special case of a single phase ($s_{0} = 0$) in the absense of a settling velocity ($U_{\text{p}}' = 0$). This reduces the problem to that of the well studied Rayleigh-Taylor case\textsuperscript{5}. 
 
         \begin{figure}
             \includegraphics[width=0.3\paperwidth]{Megan.jpg}
@@ -321,11 +383,33 @@
 
         \vspace{-0.5cm}
 
-        \centering \footnotesize Figure 4. Experimentally produced Rayleigh-Taylor instability. The green fluid is lighter than the overlying clear fluid. Credit: Megan Davies Wykes
+        \centering \footnotesize Figure 6. Experimentally produced Rayleigh-Taylor instability. The green fluid is lighter than the overlying clear fluid. Credit: Megan Davies Wykes
 
         \vspace{0.5cm}
 
-        \normalsize Choose sufficiently large $\Rey (10^{4})$ and $\Sc_{\text{p}} (10^{3})$ that system becomes independent of them \\
+        \normalsize Choose sufficiently large $\Rey (10^{4})$ and $\Sc_{\text{p}} (10^{3})$ that system becomes independent of them. \\
+
+        \begin{block}{Further work}
+          \begin{itemize}
+          \item Inlcude non-zero settling velocity $U_{\text{p}}$\\
+          \item Account for presence of solute ($s_{0} \ne 0$) \\
+          \item Include non-zero velocity base state and study effect of shear \\
+          \item Compare results with simulations and experiments (Figure 8)\\
+            
+          \end{itemize}
+
+        \end{block}
+
+        \tiny
+        \begin{exampleblock}{\scriptsize References}
+          1) Manzella et al. 2015, Geology 43 \\
+          2) Scollo et al. 2017, Bull. Volcanl. 79 \\
+          3) Burns and Meiburg 2015, J. Fluid Mech. 762 \\
+          4) Burns and Meiburg 2012, J. Fluid Mech. 691 \\
+          5) Chandrasekhar 1961, \textit{Hydrodynamic and Hydromagnetic Stability} \\
+
+        \end{exampleblock}
+        
       \end{column}
 
       \begin{column}{0.3\paperwidth}
@@ -338,7 +422,19 @@
 
         \vspace{-0.8cm}
 
-        \centering \footnotesize Figure 5. Dispersion relation showing that $\sigma \sim A_{\gamma}$. There are two regimes of $k^{\prime}$ dependence, when $k^{\prime} < 1$, $\sigma \sim k^{\prime 1/2}$ and when $k^{\prime} > 1$, $\sigma \sim k^{\prime 0}$. 
+        \centering \footnotesize Figure 7. Dispersion relation showing that $\sigma \sim A_{\gamma}$. There are two regimes of $k^{\prime}$ dependence, when $k^{\prime} < 1$, $\sigma \sim k^{\prime 1/2}$ and when $k^{\prime} > 1$, $\sigma \sim k^{\prime 0}$. 
+
+        \normalsize
+        
+        \begin{block}{Conclusions}
+          \begin{itemize}
+          \item Ash fingers are produced by a gravitational instability \\
+          \item Linear stability analysis predicts fastest growing wavelength \\
+          \item Code can reproduce Rayleigh-Taylor instability
+          \item Can easily include other effects such as shear and diffusion \\
+          \end{itemize}
+        \end{block}
+
       \end{column}
 
       \begin{column}{0.3\paperwidth}
@@ -377,27 +473,38 @@
           \end{column}
         \end{columns}
 
-        \vspace{1cm}
+        \vspace{-0.5cm}
 
         \begin{columns}[c]
           
           \begin{column}{0.15\paperwidth}
 
-            \centering $$\omega \sim \left(\frac{g k \rho_{\text{p}}}{\rho_{0}}\right)^{1/2}$$
+            \centering $$\sigma \sim \left(\frac{g k \rho_{\text{p}}}{\rho_{0}}\right)^{1/2}$$
         
           \end{column}
 
           \begin{column}{0.15\paperwidth}
 
-            \centering $$\omega \sim \left(\frac{g \rho_{\text{p}}}{L_{\text{p}} \rho_{0}}\right)^{1/2}$$
+            \centering $$\sigma \sim \left(\frac{g \rho_{\text{p}}}{L_{\text{p}} \rho_{0}}\right)^{1/2}$$
 
           \end{column}
         \end{columns}
+
+        \vspace{0.5cm}
+
+
+        \begin{figure}
+          \includegraphics[width=0.3\paperwidth]{exp.jpg}
+        \end{figure}
+
+        \centering \footnotesize Figure 8. Fingers formed under shear in prelimary experiments. \\
+        
       \end{column}
 
     \end{columns}
         
   \end{block}
+
 \end{frame}
 \end{document}
 
